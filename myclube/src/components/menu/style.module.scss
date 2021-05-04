@@ -17,25 +17,38 @@
     }
 
     ul {
+        width: 100%;
         margin-top: 3.5rem;
     }
 
     li{
+        display: flex;
         list-style: none;
         margin: 2.7rem 0px;
+        padding-left: 2.5rem;
         width: 100%;
 
         font-family: Arial, Helvetica, sans-serif;
         text-transform: uppercase;
 
+        transition: .4s;
+        
+        
+        a {
+            flex: 1;
+            font-size: 1.20rem;
+            font-weight: 300;
+            text-decoration: none;
+            color: #5E5E68;
     }
-    li::content{
-        background: red;
+
     }
-    a {
-        font-size: 1.20rem;
-        font-weight: 300;
-        text-decoration: none;
-        color: #5E5E68;
+    li:hover{
+        width: 100%;
+        border-left:  solid 3px #7d41e4;
+
+        a:hover{
+            color: #7d41e4;
+        }
     }
 }
