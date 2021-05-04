@@ -1,7 +1,7 @@
 import Menu from "../components/menu/menu";
 
-import '../styles/global.scss';
 import style from '../styles/style.module.scss';
+import '../styles/global.scss'
 
 function MyApp({ Component, pageProps }) {
 
