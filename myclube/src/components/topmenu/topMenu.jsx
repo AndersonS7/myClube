@@ -17,16 +17,26 @@ export default function TopMenu() {
 
                 <div className={style.msg}>
                 </div>
-                
-                <div className={style.menuExit}>
-                    <span>
+
+                <div className={style.menuCard}>
+
+                    <span className={style.data}>
                         <p>28 Mar, 2021</p>
                     </span>
-                    <div>
-                        
+
+                    <div className={style.nameInfo}>
+                        <div>sair</div>
+                        <div>
+                            <h3>Marcos Alvez</h3>
+                            <h4>Flamengo</h4>
+                        </div>
+                        <span>foto</span>
                     </div>
+
+                    {/* falta a opção de sair */}
+
                 </div>
-                </div>
+            </div>
             <div className={style.content}>
 
             </div>
