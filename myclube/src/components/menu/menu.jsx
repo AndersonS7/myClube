@@ -5,7 +5,7 @@ import {
     IoStatsChartSharp,
 } from "react-icons/io5";
 import { BsTable } from "react-icons/bs";
-import {BiFootball} from 'react-icons/bi'
+import { BiFootball } from 'react-icons/bi'
 import Link from 'next/link';
 
 export default function Content() {
@@ -13,9 +13,11 @@ export default function Content() {
     return (
         <div className={style.container}>
             <div className={style.logo}>
-                <BiFootball className={style.ball}/>
-                <span className={style.logoMy}>My</span> <br/>
-                <span className={style.logoClub}>Club</span>
+                <BiFootball className={style.ball} />
+                <div className={style.nameContainer}>
+                    <span className={style.logoMy}>My</span>
+                    <span className={style.logoClub}>Club</span>
+                </div>
             </div>
             <ul>
                 <li>

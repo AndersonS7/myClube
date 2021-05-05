@@ -1,3 +1,13 @@
 .container{
     display: flex;
+    background: red;
+
+    .content {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+
+        background: blue;
+    }
+
 }
