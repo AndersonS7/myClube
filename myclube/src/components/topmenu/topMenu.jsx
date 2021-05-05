@@ -16,13 +16,17 @@ export default function TopMenu() {
                 </div>
 
                 <div className={style.msg}>
-                    <h2>Veja os detalhes do seu time favorito</h2>
                 </div>
                 
                 <div className={style.menuExit}>
-                    <h3>getOut</h3>
+                    <span>
+                        <p>28 Mar, 2021</p>
+                    </span>
+                    <div>
+                        
+                    </div>
                 </div>
-            </div>
+                </div>
             <div className={style.content}>
 
             </div>
