@@ -1,4 +1,5 @@
 import style from './style.module.scss';
+import Image from 'next/image';
 
 export default function TopMenu() {
 
@@ -25,15 +26,20 @@ export default function TopMenu() {
                     </span>
 
                     <div className={style.nameInfo}>
-                        <div>sair</div>
+                        <button>v</button> 
+
                         <div>
                             <h3>Marcos Alvez</h3>
                             <h4>Flamengo</h4>
                         </div>
-                        <span>foto</span>
+                        
+                        <Image className={style.img}
+                            src="/img/icones/user/marcos.jpg"
+                            alt='marcos'
+                            width={250}
+                            height={250}
+                        />
                     </div>
-
-                    {/* falta a opção de sair */}
 
                 </div>
             </div>
