@@ -1,6 +1,15 @@
 $color-verde:  #187e18;
 $color-blue: #3b3b7c;
+
+/* cores do layout principal */
 $color-bg-black: #151516;
+$color-text-gray: #58585c;
+$color-text-white: #FFFFFF;
+$color-cards: #202020;
+
+$color-positive: #26A69A;
+$color-warn: #FBC02D;
+$color-error: #C62828;
 
 .container {
     display: flex;
@@ -8,9 +17,300 @@ $color-bg-black: #151516;
     background:$color-bg-black;
     padding: 1.5rem;
 
+    font-family: Arial, Helvetica, sans-serif;
+
+    /* coluna com as informações de vitória, emapte, derrota e saldo */
+    .vitoria{
+        display: flex;
+        flex-direction: column;
+        
+        margin-right: 1.5rem;
+        margin-bottom: 0.5rem;
+        border-radius: 10px;
+
+        width: 50%;
+
+        background: $color-cards;
+
+        h3{
+            margin-top: 1rem;
+            text-align: center;
+            color: $color-text-gray;
+
+            font-size: 2rem;
+        }
+
+        div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .AiOutlineArrowUp{
+                margin-top: 25%;
+                color: $color-positive;
+
+                font-size: 30px;
+            }
+
+            div{ /* div que contem os dois <p> */
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                margin-top: 10%;
+                margin-right: 0.4rem;
+            }
+        }
+
+        .numberMainVitoria{
+            display: flex;
+            justify-content: center;
+
+            font-size: 2.8rem;
+            color: $color-text-white;
+
+            width: 3.5rem;
+            border-bottom: solid 1px $color-text-gray;
+        }
+        .percentageVitoria{
+            font-size: 1.5rem;
+            color: $color-text-gray;
+        }
+    }
+
+    .empate{
+        display: flex;
+        flex-direction: column;
+
+        margin-right: 1.5rem;
+        margin-bottom: 0.5rem;
+        border-radius: 10px;
+
+        width: 50%;
+
+        background: $color-cards;
+
+        h3{
+            margin-top: 1rem;
+            text-align: center;
+            color: $color-text-gray;
+
+            font-size: 2rem;
+        }
+
+        div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .AiOutlineArrowDown{
+                margin-top: 25%;
+                color: $color-warn;
+
+                font-size: 30px;
+            }
+
+            div{ /* div que contem os dois <p> */
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin-right: 0.4rem;
+
+                margin-top: 10%;
+            }
+        }
+
+        .numberMainVitoria{
+            display: flex;
+            justify-content: center;
+
+            font-size: 2.8rem;
+            color: $color-text-white;
+
+            width: 3.5rem;
+            border-bottom: solid 1px $color-text-gray;
+        }
+        .percentageVitoria{
+            font-size: 1.5rem;
+            color: $color-text-gray;
+        }
+    }
+
+    .derrota{
+        display: flex;
+        flex-direction: column;
+
+        margin-right: 1.5rem;
+        margin-top: 0.5rem;
+        border-radius: 10px;
+
+        width: 50%;
+
+        background: $color-cards;
+
+        h3{
+            margin-top: 1rem;
+            text-align: center;
+            color: $color-text-gray;
+
+            font-size: 2rem;
+        }
+
+        div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            h6{
+                margin-top: 20%;
+                font-size: 50px;
+                color: $color-error;
+            }
+
+            div{ /* div que contem os dois <p> */
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin-right: 0.4rem;
+
+                margin-top: 10%;
+            }
+        }
+
+        .numberMainVitoria{
+            display: flex;
+            justify-content: center;
+
+            font-size: 2.8rem;
+            color: $color-text-white;
+
+            width: 3.5rem;
+            border-bottom: solid 1px $color-text-gray;
+        }
+        .percentageVitoria{
+            font-size: 1.5rem;
+            color: $color-text-gray;
+        }
+    }
+
+    .balance{
+        display: flex;
+        flex-direction: column;
+
+        margin-right: 1.5rem;
+        margin-top: 0.5rem;
+        border-radius: 10px;
+
+        width: 50%;
+
+        background: $color-cards;
+
+        h3{
+            margin-top: 1rem;
+            text-align: center;
+            color: $color-text-gray;
+
+            font-size: 2rem;
+        }
+
+        div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+
+            div{ /* div que contem os dois <p> */
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin-right: 0.4rem;
+
+                margin-top: 10%;
+
+                div{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+
+                    width: 3.5rem;
+                    margin-left: .5rem;
+
+
+                    .positiveBalance {
+                        font-size: 1.5rem;
+                        color: $color-text-gray;
+
+                        border-right: solid 1px $color-text-gray;
+
+                        width: 50%;
+
+                        color: $color-verde
+                    }
+                    .negativeBalance {
+                        font-size: 1.5rem;
+                        color: $color-text-gray;
+
+                        width: 50%;
+
+                        text-align: end;
+
+                        color: $color-error;
+                    }
+                }
+            }
+        }
+
+        .numberMainVitoria{
+            display: flex;
+            justify-content: center;
+
+            font-size: 2.8rem;
+            color: $color-text-white;
+
+            width: 3.5rem;
+            border-bottom: solid 1px $color-text-gray;
+        }
+        .percentageVitoria{
+            font-size: 1.5rem;
+            color: $color-text-gray;
+        }
+    }
+    
+    /* coluna dos ultimos 5 jogos do time */
+    .lastFiveGames{
+        width: 100%;
+        height: 100%;
+
+        
+        text-align: center;
+        padding-top: 1rem;
+        
+        color: $color-text-gray;
+        background-color: $color-cards;
+
+        border-radius: 10px;
+    }
+
+    .roudTable{
+        width: 100%;
+        height: 100%;
+        
+        text-align: center;
+        color: $color-text-gray;
+
+        background-color: $color-cards;
+
+        border-radius: 10px;
+    }
 
 }
 
+/* colunas e linhas do grid */
 .column{
     display: flex;
     flex-direction: column;
@@ -19,7 +319,7 @@ $color-bg-black: #151516;
     height: 100%;
     width: 100%;
 
-    border: solid 1px $color-blue;
+    /* border: solid 1px $color-blue; */
 }
 
 .row{
@@ -30,7 +330,7 @@ $color-bg-black: #151516;
     height: 100%;
     width: 100%;
 
-    border: solid 1px $color-verde;
+    /* border: solid 1px $color-verde; */
 }
 
 .column_w60{
@@ -42,7 +342,7 @@ $color-bg-black: #151516;
 
     margin-right: 20px;
 
-    border: solid 1px $color-blue;
+    /* border: solid 1px $color-blue; */
 }
 
 .column_w40{

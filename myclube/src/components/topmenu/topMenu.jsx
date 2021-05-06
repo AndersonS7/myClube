@@ -1,6 +1,8 @@
 import style from './style.module.scss';
 import Image from 'next/image';
 
+import { MdKeyboardArrowDown } from "react-icons/md"
+
 export default function TopMenu() {
 
     return (
@@ -26,7 +28,7 @@ export default function TopMenu() {
                     </span>
 
                     <div className={style.nameInfo}>
-                        <button>v</button> 
+                        <button><MdKeyboardArrowDown className={style.btnArrow}/></button> 
 
                         <div>
                             <h3>Marcos Alvez</h3>
