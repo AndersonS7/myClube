@@ -7,7 +7,22 @@ export default function Home() {
             <div className={style.column_w60}>
                 <div className={style.row}>
                     <div className={style.column}>
-                        coluna a
+                        <div className={style.row}>
+                            <div>
+                                vitoria
+                            </div>
+                            <div>
+                                empate
+                            </div>
+                        </div>
+                        <div className={style.row}>
+                            <div>
+                                derrotas
+                            </div>
+                            <div>
+                                saltdo
+                            </div>
+                        </div>
                     </div>
                     <div className={style.column}>
                         coluna b
@@ -17,7 +32,7 @@ export default function Home() {
                     linha b
                 </div>
             </div>
-            
+
             <div className={style.column_w40}>
                 coluna b
             </div>
