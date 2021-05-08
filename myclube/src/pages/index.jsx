@@ -7,6 +7,7 @@ export default function Home() {
         <div className={style.container}>
             <div className={style.column_w60}>
                 <div className={style.row}>
+
                     <div className={style.column}>
 
                         <div className={style.row}>
@@ -68,7 +69,46 @@ export default function Home() {
 
                     <div className={style.column}>
                         <div className={style.lastFiveGames}>
-                            <h2>Últimos 5 jogos</h2>
+                            <h3>Últimos 5 jogos</h3>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td><img src="/img/icones/clubes/flamengo.svg" width='45px' alt="flamengo" /></td>
+                                        <td><h2>3</h2></td>
+                                        <td>X</td>
+                                        <td><h2>1</h2></td>
+                                        <td><img src="/img/icones/clubes/fortaleza.svg" width='45px' alt="fortaleza" /></td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="/img/icones/clubes/atletico-mg.svg" width='45px' alt="atletico-mg" /></td>
+                                        <td><h2>0</h2></td>
+                                        <td>X</td>
+                                        <td><h2>0</h2></td>
+                                        <td><img src="/img/icones/clubes/flamengo.svg" width='45px' alt="flamengo" /></td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="/img/icones/clubes/america-mg.svg" width='45px' alt="america-mg" /></td>
+                                        <td><h2>0</h2></td>
+                                        <td>X</td>
+                                        <td><h2>1</h2></td>
+                                        <td><img src="/img/icones/clubes/flamengo.svg" width='45px' alt="flamengo" /></td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="/img/icones/clubes/athletico-pr.svg" width='45px' alt="athletico-mg" /></td>
+                                        <td><h2>0</h2></td>
+                                        <td>X</td>
+                                        <td><h2>2</h2></td>
+                                        <td><img src="/img/icones/clubes/flamengo.svg" width='45px' alt="flamengo" /></td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="/img/icones/clubes/flamengo.svg" width='45px' alt="flamengo" /></td>
+                                        <td><h2>1</h2></td>
+                                        <td>X</td>
+                                        <td><h2>0</h2></td>
+                                        <td><img src="/img/icones/clubes/red_bull.svg" width='45px' alt="red_bull" /></td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
 
@@ -79,11 +119,120 @@ export default function Home() {
                         <h2>Resumo do campeonato</h2>
                     </div>
                 </div>
-
             </div>
 
             <div className={style.column_w40}>
-                coluna b
+                <div className={style.firstFivePlaced}>
+                    <h3>Primeiros 5 colocados</h3>
+
+                    <table>
+                        <thead>
+
+                            <tr>
+                                <th></th>
+                                <th></th>
+                                <th>vit</th>
+                                <th>emp</th>
+                                <th>der</th>
+                                <th>sg</th>
+                                <th>recentes</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1°</td>
+                                <td><img src="/img/icones/clubes/gremio.svg" width='30px' alt="gremio" /></td>
+                                <td>5</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>11</td>
+                                <td>
+                                    <div className={style.lastGames}>
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2°</td>
+                                <td><img src="/img/icones/clubes/santos.svg" width='30px' alt="santos" /></td>
+                                <td>5</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>10</td>
+                                <td>
+                                    <div className={style.lastGames}>
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3°</td>
+                                <td><img src="/img/icones/clubes/ceara.svg" width='30px' alt="ceara" /></td>
+                                <td>4</td>
+                                <td>1</td>
+                                <td>0</td>
+                                <td>10</td>
+                                <td>
+                                    <div className={style.lastGames}>
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>4°</td>
+                                <td><img src="/img/icones/clubes/flamengo.svg" width='30px' alt="flamengo" /></td>
+                                <td>4</td>
+                                <td>1</td>
+                                <td>0</td>
+                                <td>7</td>
+                                <td>
+                                    <div className={style.lastGames}>
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>5°</td>
+                                <td><img src="/img/icones/clubes/fluminense.svg" width='30px' alt="fluminense" /></td>
+                                <td>4</td>
+                                <td>0</td>
+                                <td>1</td>
+                                <td>7</td>
+                                <td>
+                                    <div className={style.lastGames}>
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                    </div>
+                                </td>
+                            </tr>
+                            
+                        </tbody>
+
+                    </table>
+
+                    <h4>jogando agora</h4>
+                    <img src="/img/icones/img/aviso-nao-ha-jogos.png" width='350px' alt="não ha ajogos" />
+                    <h5>não ha jogos nesse momento</h5>
+                </div>
             </div>
         </div>
     )
